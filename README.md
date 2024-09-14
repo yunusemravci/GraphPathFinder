@@ -1,6 +1,7 @@
 # Graph Path Finding Server and Client
 ## Project Definition
 This project implements a multi-threaded server and client system for finding paths in a large graph. The server loads a graph from a file, handles multiple client connections concurrently, and uses caching to improve performance. The client requests paths between two nodes in the graph from the server.
+
 ## Key Features:
 * Multi-threaded server with dynamic thread pool
 * Efficient graph loading and path finding using Breadth-First Search (BFS)
@@ -88,3 +89,6 @@ Example:
 * Both server and client implement robust error checking and logging.
 * The server gracefully handles termination signals, ensuring proper cleanup.
 * The client reports connection errors and invalid server responses.
+  
+> [!NOTE]
+> Directed unweighted graph from the Stanford Large Network Dataset Collection ( https://snap.stanford.edu/data/ ) , an example is included in this archive.
